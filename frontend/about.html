@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block nav-items %}
+<li class="nav-item">
+  <a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Plans</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Nutrition</a>
+</li>
+{% endblock nav-items %}
+
+{% block title-content %}
+<div class="row">
+  <div class="col-lg-6">
+    <h2 class="quote">Your About</h2>
+    <br />
+    <br />
+  </div>
+</div>
+
+{% endblock title-content %} 
+
+
+{% block main %}
+your about context
+{% endblock main %}
+
