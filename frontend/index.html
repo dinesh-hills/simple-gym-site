@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -5,7 +6,7 @@
   <meta charset="utf-8">
   <title>SPARTANS</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css'%}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
@@ -108,17 +109,17 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h2 class="review">Excellent personal training. Trainers who really care and go above and beyond to help you achieve your goals. Gym that feels more personal. Highly recommended!.</h2>
-          <img class="testimonial-image" src="images/client1.jpeg" alt="client">
+          <img class="testimonial-image" src="{% static 'images/client1.jpeg' %}" alt="client">
           <em style="color:white; font-size:1.5rem;">- Kumar</em>
         </div>
         <div class="carousel-item">
           <h2 class="review"> Spartans gym is awesome. Their trainers are exceptional, the overall vibe is great and I have had nothing but good experiences. I definitely recommend them to my friends and family.</h2>
-          <img class="testimonial-image" src="images/client2.jpg" alt="client">
+          <img class="testimonial-image" src="{% static 'images/client2.jpg' %}" alt="client">
           <em style="color:white; font-size:1.5rem;">- Christina</em>
         </div>
         <div class="carousel-item">
           <h2 class="review"> Spartans is hands-down my favorite gym. The workouts are always new and engaging and the instructors care about not only getting you to sweat, but also making sure you are staying safe.</h2>
-          <img class="testimonial-image" src="images/client3.jpg" alt="client">
+          <img class="testimonial-image" src="{% static 'images/client3.jpg' %}" alt="client">
           <em style="color:white; font-size:1.5rem;">- Roshan</em>
         </div>
       </div>
@@ -159,7 +160,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="card">
           <h3 class="card-header">Standard</h3>
-          <img class="card-img-top" src="images/standard.PNG" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/standard.PNG' %}" alt="Card image cap">
           <div class="card-body">
             <h4>Rs.1000/month</h4>
             <br>
@@ -173,7 +174,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="card">
           <h3 class="card-header">Advanced</h3>
-          <img class="card-img-top" src="images/advanced.PNG" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/advanced.PNG' %}" alt="Card image cap">
           <div class="card-body">
             <h4>Rs.2000/month</h4>
             <br>
@@ -187,7 +188,7 @@
       <div class="col-lg-4">
         <div class="card">
           <h3 class="card-header">Premium</h3>
-          <img class="card-img-top" src="images/premium.PNG" alt="Card image cap">
+          <img class="card-img-top" src="{% static 'images/premium.PNG' %}" alt="Card image cap">
           <div class="card-body">
             <h4>Rs.15000/year</h4>
             <br>

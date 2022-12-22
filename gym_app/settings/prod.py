@@ -1,12 +1,20 @@
 import os
-from .common import *
+import json
+from .base import *
 
 
 DEBUG = False
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+with open('gym_app/settings/secrets.json', 'r') as f:
+    secrets = json.load(f)
 
-ALLOWED_HOSTS = []
+DEBUG = False
+
+SECRET_KEY = secrets['secret_key']
+
+# SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+
+ALLOWED_HOSTS = ['localhost']
 
 
 DATABASES = {

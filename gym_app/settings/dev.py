@@ -1,5 +1,5 @@
 import json
-from .common import *
+from .base import *
 
 with open('gym_app/settings/secrets.json', 'r') as f:
     secrets = json.load(f)
